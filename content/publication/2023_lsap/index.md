@@ -8,8 +8,8 @@ authors:
   - admin
   - Lu Yang
   - Dongxv Liu
-  - Xiaoya Yang
-  - Tianrui Huang
+  - Zhiwei Liu
+  - Shan Li
   - Qing Song
 
 # Author notes (optional)
@@ -41,7 +41,9 @@ abstract: Recently, inversion methods have been exploring the incorporation of a
 # Summary. An optional shortened abstract.
 summary: We analyse the resources of "Fidelity, Perception, and Editability" in inversion task and point out that the keypoint is disalignment between inverse latent codes and synthetic distribution. We then propose a simple but efficient and uniform solution in both optimization-based and encoder-based methods.
 
-tags: [GAN Inversion]
+tags:
+  - GAN Inversion
+  - GAN
 
 # Display this page in the Featured widget?
 featured: true
@@ -51,7 +53,7 @@ featured: true
 #- name: Custom Link
 #  url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2301.12141'
+url_pdf: 'https://arxiv.org/abs/2209.12746'
 url_code: 'https://github.com/caopulan/Domain-Specific_Hybrid_Refinement_Inversion'
 #url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 #url_poster: ''

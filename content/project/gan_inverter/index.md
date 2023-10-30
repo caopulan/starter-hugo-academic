@@ -1,14 +1,15 @@
 ---
-title: External Project
-summary: An example of linking directly to an external project website using `external_link`.
+title: GAN Inverter
+summary: A GAN inversion toolbox based on PyTorch library. We design a unified pipeline for inversion methods and conduct a comprehensive benchmark.
 tags:
-  - Demo
-date: "2016-04-27T00:00:00Z"
+  - GAN
+  - GAN Inversion
+date: "2022-11-01"
 
 # Optional external URL for project (replaces project detail page).
-external_link: https://example.org
+external_link: https://github.com/caopulan/GANInverter
 
 image:
-  caption: Photo by Toa Heftiba on Unsplash
+  caption: GAN Inverter
   focal_point: Smart
 ---

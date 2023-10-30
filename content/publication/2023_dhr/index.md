@@ -41,7 +41,9 @@ abstract: Recently, inversion methods have been exploring the incorporation of a
 # Summary. An optional shortened abstract.
 summary: Editing capability decreases ineivitably in previous refinement methods, (e.g., PTI, HFGI, and SAM). In this work, we explore the idea of "divide and conquer" to address this problem. We combine two mainstream refinement mechanisms (i.e., weight ande feature modulation) and achieve extroadinary inversion and editing results.
 
-tags: [GAN Inversion]
+tags:
+  - GAN Inversion
+  - GAN
 
 # Display this page in the Featured widget?
 featured: true
