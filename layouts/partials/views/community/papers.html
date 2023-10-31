@@ -40,11 +40,12 @@
         {{ $item.Title | markdownify | emojify }}
         {{- if $do_link}}</a>{{end -}}
       </div>
+      <strong>
       {{ if $item.Params.publication_short }}
     {{- $item.Params.publication_short | markdownify -}}.
   {{ else if $item.Params.publication }}
     {{- $item.Params.publication | markdownify -}}.
-  {{ end }}
+  {{ end }}</strong>
       {{ with $summary }}
       <div class="article-style">
         {{ . }}
