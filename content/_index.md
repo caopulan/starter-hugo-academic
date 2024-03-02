@@ -168,6 +168,7 @@ sections:
       text: |-
         - WACV 2024
         - TNNLS
+        - TCSVT
     design:
       columns: '2'
   - block: contact
