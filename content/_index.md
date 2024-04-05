@@ -167,6 +167,7 @@ sections:
       subtitle: ''
       text: |-
         - WACV 2024
+        - ECCV 2024
         - TNNLS
         - TCSVT
     design:
