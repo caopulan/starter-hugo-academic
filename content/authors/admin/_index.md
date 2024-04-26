@@ -30,6 +30,7 @@ bio: I'm a second-year Ph.D. student studying at Beijing University of Posts and
 # Interests to show in About widget
 interests:
   - Image Synthesis
+  - Multimodal Large Language Models
   - Visual Representation
   - Image Detection/Segmentation
   - Computer Vision
