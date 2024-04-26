@@ -1,5 +1,5 @@
 ---
-title: 'What Decreases Editing Capability? Domain-Specific Hybrid Refinement for Improved GAN Inversion'
+title: 'E4C: Enhance Editability for Text-Based Image Editing by Harnessing Efficient CLIP Guidance'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
