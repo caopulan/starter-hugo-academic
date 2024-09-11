@@ -166,10 +166,12 @@ sections:
       title: Service
       subtitle: ''
       text: |-
-        - WACV 2024
-        - ECCV 2024
+        - TPAMI
+        - TMM
         - TNNLS
         - TCSVT
+        - WACV (2024, 2025)
+        - ECCV (2024)
     design:
       columns: '2'
   - block: contact
