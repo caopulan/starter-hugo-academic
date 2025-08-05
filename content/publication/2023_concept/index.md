@@ -1,23 +1,23 @@
 ---
-title: 'Concept-centric Personalization with Large-scale Diffusion Priors'
+title: 'Image is All You Need to Empower Large-scale Diffusion Models for In-Domain Generation'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
-  - Lu Yang
   - Feng Zhou
+  - Lu Yang
   - Tianrui Huang
   - Qing Song
 
 # Author notes (optional)
 author_notes:
-  - 
-  - 
-  - 
-  - 
+  - 'Authors contribute equally'
+  - 'Authors contribute equally'
   - 'Corresponding author'
+  - 
+  - 
 
 date: '2023-11-01T00:00:00Z'
 doi: ''
@@ -31,17 +31,16 @@ publishDate: '2023-11-01T00:00:00Z'
 #publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: ArXiv 2023
-publication_short: ArXiv 2023
+publication: CVPR 2025
+publication_short: CVPR 2025
 
-abstract: 'Despite large-scale diffusion models being highly capable of generating diverse open-world content, they still struggle to match the photorealism and fidelity of concept-specific generators. In this work, we present the task of customizing large-scale diffusion priors for specific concepts as concept-centric personalization. Our goal is to generate high-quality concept-centric images while maintaining the versatile controllability inherent to open-world models, enabling applications in diverse tasks such as concept-centric stylization and image translation. Distinct from existing personalization tasks that focus on specific entities, the proposed task requires large-scale training to achieve reasonable results. It brings forth unique challenges: difficult fidelity and controllability balancing and severe unconditional guidance drift in classifier-free guidance. To tackle these challenges, we identify catastrophic forgetting of guidance prediction from diffusion priors as the fundamental issue. Consequently, we develop a guidance-decoupled personalization framework specifically designed to address this task. We propose Generalized Classifier-free Guidance (GCFG) as the foundational theory for our framework. This approach extends Classifier-free Guidance (CFG) to accommodate an arbitrary number of guidances, sourced from a variety of conditions and models.  Employing GCFG enables us to separate conditional guidance into two distinct components: concept guidance for fidelity and control guidance for controllability. This division makes it feasible to train a specialized model for concept guidance, while ensuring both control and unconditional guidance remain intact. We then present a null-text Concept-centric Diffusion Model as a concept-specific generator to learn concept guidance without the need for text annotations. Furthermore, we demonstrate the seamless integration of our framework with existing techniques and underscore the vast potential of GCFG. Our extensive experiments confirm the superior efficacy of our proposed method in achieving concept-centric personalization. Code will be available at https://github.com/PRIV-Creation/Concept-centric-Personalization.'
+abstract: 'In-domain generation aims to perform a variety of tasks within a specific domain, such as unconditional generation, text-to-image, image editing, 3D generation, and more. Early research typically required training specialized generators for each unique task and domain, often relying on fully-labeled data. Motivated by the powerful generative capabilities and broad applications of diffusion models, we are driven to explore leveraging label-free data to empower these models for in-domain generation.Fine-tuning a pre-trained generative model on domain data is an intuitive but challenging way and often requires complex manual hyper-parameter adjustments since the limited diversity of the training data can easily disrupt the model original generative capabilities.To address this challenge, we propose a guidance-decoupled prior preservation mechanism to achieve high generative quality and controllability by image-only data, inspired by preserving the pre-trained model from a denoising guidance perspective.We decouple domain-related guidance from the conditional guidance used in classifier-free guidance mechanisms to preserve open-world control guidance and unconditional guidance from the pre-trained model. We further propose an efficient domain knowledge learning technique to train an additional text-free UNet copy to predict domain guidance.Besides, we theoretically illustrate a multi-guidance in-domain generation pipeline for a variety of generative tasks, leveraging multiple guidances from distinct diffusion models and conditions. Extensive experiments demonstrate the superiority of our method in domain-specific synthesis and its compatibility with various diffusion-based control methods and applications.'
   
 # Summary. An optional shortened abstract.
-summary: Customize diffusion model for concept-centric generation with high controllability, fidelity, and diversity.
+summary: Empower diffusion model for in-domain generation.
 
 tags:
   - Diffusion
-  - Personalization
 
 # Display this page in the Featured widget?
 featured: true
@@ -51,8 +50,8 @@ featured: true
 #- name: Custom Link
 #  url: http://example.org
 
-url_pdf: 'https://arxiv.org/abs/2312.08195'
-url_code: 'https://github.com/PRIV-Creation/Concept-centric-Personalization'
+url_pdf: 'https://openaccess.thecvf.com/content/CVPR2025/html/Cao_Image_is_All_You_Need_to_Empower_Large-scale_Diffusion_Models_CVPR_2025_paper.html'
+url_code: 'https://github.com/PRIV-Creation/In-domain-Generation-Diffusion'
 #url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 #url_poster: ''
 #url_project: ''

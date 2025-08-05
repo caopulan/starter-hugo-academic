@@ -170,8 +170,9 @@ sections:
         - TMM
         - TNNLS
         - TCSVT
-        - ECCV 2024(Outstanding Reviewer)
+        - ECCV 2024 (Outstanding Reviewer)
         - WACV 2024/2025
+        - CVPR 2025
     design:
       columns: '2'
   - block: contact
