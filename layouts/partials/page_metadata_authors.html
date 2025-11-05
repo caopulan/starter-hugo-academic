@@ -1,0 +1,49 @@
+{{/* Display author list with contribution markers. */}}
+
+{{- $taxonomy := "authors" -}}
+{{- if .Param $taxonomy -}}
+  {{- $notes := slice -}}
+  {{- if isset .Params "author_notes" -}}
+    {{- $notes = .Params.author_notes -}}
+  {{- end -}}
+  {{- range $index, $term := (.GetTerms $taxonomy) -}}
+    {{- $highlight := $term.Page.Params.highlight_name | default false -}}
+    {{- $note := "" -}}
+    {{- if and $notes (lt $index (len $notes)) -}}
+      {{- $candidate := index $notes $index -}}
+      {{- if $candidate -}}
+        {{- $note = $candidate -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- $markers := slice -}}
+    {{- with $note -}}
+      {{- $normalized := lower . -}}
+      {{- if or (in $normalized "equal") (in $normalized "co-first") (in $normalized "joint first") (in $normalized "共同") (in $normalized "并列") -}}
+        {{- $markers = $markers | append "*" -}}
+      {{- end -}}
+      {{- if or (in $normalized "correspond") (in $normalized "contact author") (in $normalized "通讯") (in $normalized "通信") -}}
+        {{- $markers = $markers | append "✉" -}}
+      {{- end -}}
+      {{- if or (in $normalized "project leader") (in $normalized "leader") (in $normalized "负责人") (in $normalized "lead author") -}}
+        {{- $markers = $markers | append "†" -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if gt $index 0 }}, {{ end -}}
+    <span class="author{{ if $highlight }} author-highlighted{{ end }}">
+      {{- if $term.RelPermalink -}}
+        <a href="{{ $term.RelPermalink }}">{{ $term.LinkTitle }}</a>
+      {{- else -}}
+        {{ $term.LinkTitle }}
+      {{- end -}}
+      {{- with $markers -}}
+        <sup class="author-marker">{{ delimit . "" }}</sup>
+      {{- end -}}
+    </span>
+
+    {{- with $note -}}
+      <i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="{{ . }}"></i>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

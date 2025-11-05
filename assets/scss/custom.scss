@@ -1,0 +1,10 @@
+.author-marker {
+  font-size: 0.65em;
+  margin-left: 0.2em;
+}
+
+.author-highlighted a,
+.author-highlighted {
+  color: var(--bs-primary, currentColor);
+  font-weight: 600;
+}
