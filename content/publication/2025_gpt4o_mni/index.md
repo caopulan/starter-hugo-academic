@@ -18,7 +18,18 @@ authors:
   - Lu Yang
 
 # Author notes (optional)
-author_notes: []
+author_notes:
+  - 'Project leader'
+  - 'Authors contribute equally'
+  - 'Authors contribute equally'
+  - 'Authors contribute equally'
+  - 'Authors contribute equally'
+  - 'Authors contribute equally'
+  - 'Authors contribute equally'
+  - ''
+  - ''
+  - ''
+  - 'Project leader; Corresponding author'
 
 date: '2025-05-06T00:00:00Z'
 doi: '10.48550/arXiv.2505.05501'

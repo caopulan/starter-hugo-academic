@@ -12,7 +12,12 @@ authors:
   - Jianqin Yin
 
 # Author notes (optional)
-author_notes: []
+author_notes:
+  - 'Authors contribute equally'
+  - 'Authors contribute equally'
+  - ''
+  - ''
+  - 'Corresponding author'
 
 date: '2024-08-27T00:00:00Z'
 doi: ''
