@@ -47,7 +47,8 @@ sections:
     content:
       title: News
       text: |-
-        - 2025.10.01 A paper is accepted by AAAI (oral).
+        - 2025.11 One paper is accepted by AAAI 2026 (oral).
+        - 2025.01 One paper is accepted by CVPR 2025.
 #  - block: skills
 #    content:
 #      title: Skills

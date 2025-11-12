@@ -9,6 +9,15 @@ authors:
   - Yilin Zhou
   - Qing Song
 
+author_notes:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 'Corresponding author'
+
+    
 date: '2025-05-21T12:02:03Z'
 publishDate: '2025-05-21T12:02:03Z'
 doi: '10.1016/j.patcog.2025.111736'

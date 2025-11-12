@@ -2,8 +2,8 @@
 {{ $link := $item.RelPermalink }}
 {{ $resource := partial "functions/get_featured_image.html" $item }}
 
-<div class="row align-items-center g-3 pub-list-item mb-4">
-  <div class="col-md-10">
+<div class="row align-items-stretch g-3 pub-list-item mb-4">
+  <div class="col-md-10 d-flex flex-column h-100">
     {{ $venue := "" }}
     {{ if $item.Params.publication_short }}
       {{ $venue = $item.Params.publication_short | markdownify | plainify }}
@@ -26,20 +26,23 @@
       {{ partial "page_metadata_authors" $item }}
     </div>
 
-    <div class="btn-links">
+    <div class="btn-links mt-auto">
       {{ partial "page_links" (dict "page" $item "is_list" 1) }}
     </div>
   </div>
 
-  <div class="col-md-2 col-6 offset-md-0 offset-3 text-md-end text-center">
+  <div class="col-md-2 col-6 offset-md-0 offset-3 text-md-end text-center h-100 d-flex justify-content-md-end justify-content-center">
     {{ with $resource }}
-      {{ $image := . }}
-      {{ if ne $image.MediaType.SubType "gif" }}
-        {{ $image = $image.Process "fill 320x200 webp" }}
-      {{ end }}
-      <a href="{{ $link }}">
-        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="img-fluid rounded" alt="{{ $item.Title }}" loading="lazy" style="max-width: 160px;">
-      </a>
+      <div class="pub-image-wrapper h-100 d-flex align-items-center justify-content-center justify-content-md-end w-100">
+        {{ $image := . }}
+        {{ if ne $image.MediaType.SubType "gif" }}
+          {{ $image = $image.Process "fill 320x200 webp" }}
+        {{ end }}
+        <a href="{{ $link }}">
+          <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}"
+            class="pub-thumb rounded" alt="{{ $item.Title }}" loading="lazy">
+        </a>
+      </div>
     {{ end }}
   </div>
 </div>
