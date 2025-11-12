@@ -1,0 +1,45 @@
+{{ $item := .item }}
+{{ $link := $item.RelPermalink }}
+{{ $resource := partial "functions/get_featured_image.html" $item }}
+
+<div class="row align-items-center g-3 pub-list-item mb-4">
+  <div class="col-md-10">
+    {{ $venue := "" }}
+    {{ if $item.Params.publication_short }}
+      {{ $venue = $item.Params.publication_short | markdownify | plainify }}
+    {{ else if $item.Params.publication }}
+      {{ $venue = $item.Params.publication | markdownify | plainify }}
+    {{ else }}
+      {{ $venue = "Publication" }}
+    {{ end }}
+    {{ $is_arxiv := in (lower $venue) "arxiv" }}
+    <div class="pub-meta small text-uppercase mb-1{{ if $is_arxiv }} text-muted{{ else }} pub-meta-highlight{{ end }}">
+      {{ $venue }}
+      {{ partial "page_presentation_label.html" $item }}
+    </div>
+
+    <div class="pub-title h5 mb-1">
+      <a href="{{ $link }}">{{ $item.Title | markdownify | emojify }}</a>
+    </div>
+
+    <div class="pub-authors mb-2">
+      {{ partial "page_metadata_authors" $item }}
+    </div>
+
+    <div class="btn-links">
+      {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+    </div>
+  </div>
+
+  <div class="col-md-2 col-6 offset-md-0 offset-3 text-md-end text-center">
+    {{ with $resource }}
+      {{ $image := . }}
+      {{ if ne $image.MediaType.SubType "gif" }}
+        {{ $image = $image.Process "fill 320x200 webp" }}
+      {{ end }}
+      <a href="{{ $link }}">
+        <img src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" class="img-fluid rounded" alt="{{ $item.Title }}" loading="lazy" style="max-width: 160px;">
+      </a>
+    {{ end }}
+  </div>
+</div>

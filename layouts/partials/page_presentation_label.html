@@ -1,0 +1,4 @@
+{{ $presentation := lower (.Params.presentation | default "") }}
+{{ if eq $presentation "oral" }}
+  <span class="oral-label ms-1">(Oral)</span>
+{{ end }}

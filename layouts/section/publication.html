@@ -1,0 +1,28 @@
+{{- define "main" -}}
+
+{{ partial "page_header.html" . }}
+
+<div class="universal-wrapper publication-page">
+  {{ with .Content }}
+    <div class="article-style">{{ . }}</div>
+  {{ end }}
+  <p class="author-legend text-muted small mb-4">* Equal contribution · ✉ Corresponding author</p>
+
+  {{ $view := .Params.view | default "citation" }}
+  {{ $groups := sort (.Pages.GroupByDate "2006") "Key" "desc" }}
+
+  {{ if not $groups }}
+    <p>{{ i18n "list_empty" | default "No publications found." }}</p>
+  {{ end }}
+
+  {{ range $group := $groups }}
+    <div class="pub-group mb-5">
+      <h2 class="pub-year h3 mb-3">{{ $group.Key }}</h2>
+      {{ range $index, $item := (sort $group.Pages "Date" "desc") }}
+        {{ partial "functions/render_view" (dict "page" $ "item" $item "view" $view "index" $index) }}
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
+
+{{- end -}}
