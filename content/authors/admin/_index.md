@@ -119,5 +119,5 @@ social:
 highlight_name: true
 ---
 
-Pu Cao is a second-year Ph.D. student studying at Beijing University of Posts and Telecommunications (BUPT) under the supervision of Prof. Qing Song and Dr. Lu Yang. He is now interested in Computer Vision and am currently working on Image Synthesis.
+Pu Cao is a forth-year Ph.D. student studying at Beijing University of Posts and Telecommunications (BUPT) under the supervision of Prof. Qing Song and Dr. Lu Yang. He is now interested in Computer Vision and am currently working on Visual Synthesis and Multimodal Large-language Model.
 {style="text-align: justify;"}
