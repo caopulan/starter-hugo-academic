@@ -42,10 +42,11 @@
       </div>
       <strong>
       {{ if $item.Params.publication_short }}
-    {{- $item.Params.publication_short | markdownify -}}.
+    {{- $item.Params.publication_short | markdownify -}}
   {{ else if $item.Params.publication }}
-    {{- $item.Params.publication | markdownify -}}.
-  {{ end }}</strong>
+    {{- $item.Params.publication | markdownify -}}
+  {{ end }}
+  {{ partial "page_presentation_label.html" $item }}.</strong>
       {{ with $summary }}
       <div class="article-style">
         {{ . }}

@@ -19,11 +19,11 @@ author_notes:
   - ''
   - 'Corresponding author'
 
-date: '2025-03-12T00:00:00Z'
+date: '2025-03-14T00:12:35Z'
 doi: '10.48550/arXiv.2503.09830'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-03-12T00:00:00Z'
+publishDate: '2025-03-14T00:12:35Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -31,8 +31,8 @@ publishDate: '2025-03-12T00:00:00Z'
 #publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: 'arXiv preprint arXiv:2503.09830'
-publication_short: 'arXiv:2503.09830'
+publication: 'AAAI 2025'
+publication_short: 'AAAI 2025'
 
 abstract: Scaling latent resolutions in diffusion U-Nets often produces repetitive artifacts because zero-padding fails to propagate accurate positional cues. Through an analysis of position encoding pathways, this work attributes the degradation to inconsistent positional information and introduces Progressive Boundary Complement, a training-free strategy that synthesizes virtual boundaries to keep features spatially grounded. The method recovers high-resolution fidelity without retraining and consistently improves detail richness across benchmarks.
 
@@ -42,6 +42,7 @@ summary: Training-free positional encoding fix for high-resolution diffusion gen
 tags:
   - Diffusion
   - High-resolution Synthesis
+presentation: oral
 
 # Display this page in the Featured widget?
 featured: false

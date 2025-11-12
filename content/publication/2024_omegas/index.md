@@ -19,11 +19,11 @@ author_notes:
   - ''
   - 'Corresponding author'
 
-date: '2024-08-27T00:00:00Z'
+date: '2024-08-29T00:09:26Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-08-27T00:00:00Z'
+publishDate: '2024-08-29T00:09:26Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -31,8 +31,8 @@ publishDate: '2024-08-27T00:00:00Z'
 #publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: 'arXiv preprint arXiv:2404.15891'
-publication_short: 'arXiv:2404.15891'
+publication: 'IEEE TCSVT 2025'
+publication_short: 'IEEE TCSVT 2025'
 
 abstract: Recent advances in 3D reconstruction enable high-quality rendering of complex scenes, yet they struggle to recover detailed meshes for specific targets. OMEGAS introduces a Gaussian-splatting-based segmentation pipeline that extracts 3D-consistent target masks and bootstraps mesh reconstructions before replenishing unseen regions via diffusion priors. Experiments show that the method recovers target geometry with greater precision than existing large-scene reconstruction pipelines.
 

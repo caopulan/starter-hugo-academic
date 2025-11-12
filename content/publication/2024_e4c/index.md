@@ -23,11 +23,11 @@ author_notes:
   - 
   - 'Corresponding author'
 
-date: '2024-03-01T00:00:00Z'
+date: '2024-03-18T00:39:13Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-03-01T00:00:00Z'
+publishDate: '2024-03-18T00:39:13Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -35,8 +35,8 @@ publishDate: '2024-03-01T00:00:00Z'
 #publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
-publication: TCSVT 2025
-publication_short: TCSVT 2025
+publication: IEEE TCSVT 2025
+publication_short: IEEE TCSVT 2025
 
 abstract: Diffusion-based image editing is a composite process of preserving the source image content and generating new content or applying modifications. While current editing approaches have made improvements under text guidance, most of them have only focused on preserving the information of the input image, disregarding the importance of editability and alignment to the target prompt. In this paper, we prioritize the editability by proposing a zero-shot image editing method, named \textbf{E}nhance \textbf{E}ditability for text-based image \textbf{E}diting via \textbf{E}fficient \textbf{C}LIP guidance (\textbf{E4C}), which only requires inference-stage optimization to explicitly enhance the edibility and text alignment. Specifically, we develop a unified dual-branch feature-sharing pipeline that enables the preservation of the structure or texture of the source image while allowing the other to be adapted based on the editing task. We further integrate CLIP guidance into our pipeline by utilizing our novel random-gateway optimization mechanism to efficiently enhance the semantic alignment with the target prompt. Comprehensive quantitative and qualitative experiments demonstrate that our method effectively resolves the text alignment issues prevalent in existing methods while maintaining the fidelity to the source image, and performs well across a wide range of editing tasks.
 
