@@ -42,6 +42,12 @@ sections:
       title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
+  - block: markdown
+    id: news
+    content:
+      title: News
+      text: |-
+        - 2025.10.01 A paper is accepted by AAAI (oral).
 #  - block: skills
 #    content:
 #      title: Skills
@@ -135,7 +141,7 @@ sections:
       filters:
         folders:
           - publication
-#        exclude_featured: true
+        featured_only: true
       default_button_index: 0
       buttons:
         - name: All

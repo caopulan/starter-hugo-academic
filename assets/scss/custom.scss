@@ -8,3 +8,23 @@
   color: var(--bs-primary, currentColor);
   font-weight: 600;
 }
+
+.publication-page {
+  font-size: 0.92rem;
+}
+
+.publication-page .pub-title {
+  font-size: 1rem;
+}
+
+.pub-meta {
+  letter-spacing: 0.05em;
+}
+
+.pub-meta-highlight {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--bs-body-color);
+  letter-spacing: 0.04em;
+  text-decoration: underline;
+}
