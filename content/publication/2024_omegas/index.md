@@ -19,11 +19,11 @@ author_notes:
   - ''
   - 'Corresponding author'
 
-date: '2024-08-29T00:09:26Z'
+date: '2025-07-07T00:09:26Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-08-29T00:09:26Z'
+publishDate: '2025-07-07T00:09:26Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -51,7 +51,7 @@ featured: false
 #- name: Custom Link
 #  url: http://example.org
 
-url_pdf: 'https://arxiv.org/pdf/2404.15891'
+url_pdf: 'https://ieeexplore.ieee.org/abstract/document/11072471'
 url_code: 'https://github.com/CrystalWlz/OMEGAS'
 #url_dataset: ''
 #url_poster: ''

@@ -25,15 +25,13 @@ organizations:
     url: 'https://www.bupt.edu.cn/'
 
 # Short bio (displayed in user profile at end of posts)
-bio: I'm a second-year Ph.D. student studying at Beijing University of Posts and Telecommunications (BUPT) under the supervision of Prof. Qing Song and Dr. Lu Yang. I am now interested in Computer Vision and am currently working on Image Generaion.
+bio: I'm a forth-year Ph.D. student studying at Beijing University of Posts and Telecommunications (BUPT) under the supervision of Prof. Qing Song and Dr. Lu Yang. I am now interested in Computer Vision and am currently working on Image Generaion.
 
 # Interests to show in About widget
 interests:
-  - Image Synthesis
+  - Visual Generation
   - Multimodal Large Language Models
-  - Visual Representation
-  - Image Detection/Segmentation
-  - Computer Vision
+  - Embodied AI
 
 # Education to show in About widget
 education:

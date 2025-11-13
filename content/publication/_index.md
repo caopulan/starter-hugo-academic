@@ -13,4 +13,9 @@ view: publication-list
 banner:
   caption: ''
   image: ''
+cascade:
+  _target:
+    kind: page
+  _build:
+    render: never
 ---

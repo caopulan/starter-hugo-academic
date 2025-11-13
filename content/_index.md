@@ -135,22 +135,11 @@ sections:
     id: publications
     content:
       title: Publications
-#      text: |-
-#        {{% callout note %}}
-#        Quickly discover relevant content by [filtering publications](./publication/).
-#        {{% /callout %}}
+      text: 'Browse the highlights below or view the [complete publications archive](/publication/).'
       filters:
         folders:
           - publication
         featured_only: true
-      default_button_index: 0
-      buttons:
-        - name: All
-          tag: '*'
-        - name: GAN
-          tag: GAN
-        - name: Diffusion
-          tag: Diffusion
     design:
       columns: '1'
       view: community/papers
@@ -171,15 +160,21 @@ sections:
     id: services
     content:
       title: Service
-      subtitle: ''
+      subtitle: 'Conference & Journal Service'
       text: |-
-        - TPAMI
-        - TMM
-        - TNNLS
-        - TCSVT
+        **Conferences**
+        - ICLR 2026
+        - CVPR 2025/2026
+        - ICCV 2025
         - ECCV 2024 (Outstanding Reviewer)
         - WACV 2024/2025
-        - CVPR 2025
+
+        **Journals**
+        - TPAMI
+        - TIP
+        - TCSVT
+        - TMM
+        - TNNLS
     design:
       columns: '2'
   - block: contact
