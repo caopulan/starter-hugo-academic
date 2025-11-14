@@ -1,0 +1,22 @@
+{{ $page := . }}
+{{ $link := "" }}
+{{ $candidates := slice $page.Params.url_pdf $page.Params.url_source $page.Params.url_preprint $page.Params.url_code $page.Params.url_dataset $page.Params.url_project $page.Params.url_poster $page.Params.url_slides $page.Params.url_video $page.Params.external_link }}
+
+{{ range $candidates }}
+  {{ if and (not $link) . }}
+    {{ $link = . }}
+  {{ end }}
+{{ end }}
+
+{{ if and (not $link) $page.Params.doi }}
+  {{ $link = printf "https://doi.org/%s" $page.Params.doi }}
+{{ end }}
+
+{{ if $link }}
+  {{ $lower := lower $link }}
+  {{ if not (or (hasPrefix $lower "http://") (hasPrefix $lower "https://") (hasPrefix $link "//")) }}
+    {{ $link = relLangURL $link }}
+  {{ end }}
+{{ end }}
+
+{{ return $link }}

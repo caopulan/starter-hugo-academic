@@ -135,7 +135,10 @@ sections:
     id: publications
     content:
       title: Publications
-      text: 'Browse the highlights below or view the [complete publications archive](/publication/).'
+      text: |-
+        <p class="text-center my-3">
+          Browse the highlights below or view the <a href="/publication/">complete publications archive</a>.
+        </p>
       filters:
         folders:
           - publication
